@@ -66,8 +66,11 @@
   },
   "homepage": "https://github.com/gndx/platzi-store/#readme",
   "jest": {
-    "setUpFilesAfterEnv": [
+    "setupFilesAfterEnv": [
       "<rootDir>/src/__test__/setUpTest.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
   }
 }
